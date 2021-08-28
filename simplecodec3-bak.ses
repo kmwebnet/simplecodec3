@@ -1,0 +1,249 @@
+
+(session simplecodec3.ses
+  (base_design simplecodec3.dsn)
+  (placement
+    (resolution um 10)
+    (component Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder
+      (place C1 566420 -624840 front 270)
+      (place C2 566420 -657860 front 90)
+      (place C3 718820 -314960 front 0)
+      (place C8 703580 -568960 front 90)
+      (place C9 652780 -340360 front 0)
+      (place C14 680720 -632460 front 90)
+      (place C16 579120 -325120 front 180)
+      (place R1 751840 -314960 front 180)
+      (place R3 784860 -314960 front 0)
+      (place R4 652780 -728980 front 180)
+      (place R7 571500 -599440 front 0)
+      (place R10 571500 -553720 front 0)
+      (place R13 558800 -372110 front 180)
+      (place R15 736460 -591820 front 180)
+    )
+    (component Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder::1
+      (place C4 718820 -342900 front 0)
+      (place C5 581660 -624840 front 270)
+      (place C6 581660 -657860 front 270)
+      (place C10 695960 -632460 front 90)
+      (place C12 688340 -568960 front 90)
+      (place C13 652780 -325120 front 0)
+      (place C15 579120 -340360 front 180)
+      (place C19 615315 -335280 front 0)
+      (place R2 751840 -342900 front 180)
+      (place R5 785355 -342900 front 0)
+      (place R6 652780 -746760 front 180)
+      (place R8 571500 -584200 front 0)
+      (place R9 571500 -568960 front 0)
+      (place R11 558800 -435610 front 0)
+      (place R12 558800 -403860 front 0)
+      (place R14 736600 -608330 front 0)
+    )
+    (component Capacitor_SMD:C_0402_1005Metric
+      (place C7 640080 -640080 front 180)
+    )
+    (component Capacitor_SMD:C_0402_1005Metric::1
+      (place C11 688340 -609600 front 180)
+    )
+    (component Capacitor_THT:C_Rect_L7.0mm_W3.5mm_P5.00mm
+      (place C17 782320 -528320 front 90)
+    )
+    (component Capacitor_THT:C_Rect_L7.0mm_W3.5mm_P5.00mm::1
+      (place C18 739140 -528320 front 90)
+    )
+    (component Capacitor_THT:CP_Radial_D6.3mm_P2.50mm
+      (place C20 678180 -409810 front 90)
+    )
+    (component "SamacSys_Parts:SOIC127P600X175-8N"
+      (place IC1 594360 -726440 front 0)
+    )
+    (component SamacSys_Parts:PCM1808PWR
+      (place IC2 609600 -391160 front 180)
+    )
+    (component "SamacSys_Parts:SOP65P640X120-20N"
+      (place IC3 629920 -599440 front 180)
+    )
+    (component Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical
+      (place J1 514350 -768350 front 180)
+    )
+    (component "SamacSys_Parts:MJ-8435"
+      (place J2 840740 -416560 front 270)
+    )
+    (component "SamacSys_Parts:MJ-8435::1"
+      (place J3 840740 -683260 front 270)
+    )
+    (component "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm"
+      (place JP1 614680 -315595 front 0)
+    )
+    (component Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+      (place SW1 695960 -467360 front 0)
+    )
+    (component "Oscillator:Oscillator_SeikoEpson_SG-8002DC"
+      (place X1 642620 -454660 front 270)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "(5.1.2)-2")
+    )
+    (library_out 
+      (padstack "Via[0-1]_800:400_um"
+        (shape
+          (circle F.Cu 8000 0 0)
+        )
+        (shape
+          (circle B.Cu 8000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net Earth
+        (via "Via[0-1]_800:400_um" 576580 -356870
+          (type protect)
+        )
+        (via "Via[0-1]_800:400_um" 548640 -284480
+          (type protect)
+        )
+        (via "Via[0-1]_800:400_um" 603250 -491490
+          (type protect)
+        )
+      )
+      (net +3V3
+        (wire
+          (path B.Cu 2032
+            727710 -565150
+            727710 -577850
+          )
+          (type protect)
+        )
+        (wire
+          (path B.Cu 2032
+            642620 -557530
+            648277 -557530
+            657167 -548640
+            723900 -548640
+            727710 -552450
+            727710 -565150
+          )
+          (type protect)
+        )
+        (via "Via[0-1]_800:400_um" 727710 -641350
+          (type protect)
+        )
+        (via "Via[0-1]_800:400_um" 727710 -577850
+          (type protect)
+        )
+        (via "Via[0-1]_800:400_um" 642620 -557530
+          (type protect)
+        )
+        (via "Via[0-1]_800:400_um" 589280 -311150
+          (type protect)
+        )
+        (via "Via[0-1]_800:400_um" 542290 -670560
+          (type protect)
+        )
+        (wire
+          (path B.Cu 2032
+            727710 -577850
+            727710 -641350
+          )
+          (type protect)
+        )
+        (wire
+          (path B.Cu 2032
+            514350 -768350
+            524882 -768350
+            542290 -750942
+            542290 -670560
+          )
+          (type protect)
+        )
+        (wire
+          (path F.Cu 2032
+            566420 -666610
+            546240 -666610
+            542290 -670560
+          )
+          (type protect)
+        )
+        (wire
+          (path B.Cu 2032
+            642620 -557530
+            543560 -458470
+            543560 -332740
+            565150 -311150
+            589280 -311150
+          )
+          (type protect)
+        )
+        (wire
+          (path B.Cu 2032
+            727710 -565150
+            727710 -577850
+          )
+          (type protect)
+        )
+        (wire
+          (path B.Cu 2032
+            514350 -565150
+            635000 -565150
+            642620 -557530
+          )
+          (type protect)
+        )
+        (wire
+          (path F.Cu 2032
+            514350 -768350
+            524882 -768350
+            525898 -767334
+            525898 -576698
+            514350 -565150
+          )
+          (type protect)
+        )
+      )
+      (net GNDA
+        (via "Via[0-1]_800:400_um" 708660 -429260
+          (type protect)
+        )
+        (via "Via[0-1]_800:400_um" 655320 -359410
+          (type protect)
+        )
+      )
+      (net +5V
+        (via "Via[0-1]_800:400_um" 615950 -347980
+          (type protect)
+        )
+        (wire
+          (path B.Cu 2032
+            615950 -347980
+            642620 -347980
+            642620 -384282
+            668148 -409810
+            678180 -409810
+          )
+          (type protect)
+        )
+        (wire
+          (path F.Cu 2032
+            615950 -347980
+            615950 -363010
+            616100 -363160
+          )
+          (type protect)
+        )
+        (wire
+          (path F.Cu 2032
+            606565 -335280
+            606565 -338595
+            615950 -347980
+          )
+          (type protect)
+        )
+      )
+    )
+  )
+)

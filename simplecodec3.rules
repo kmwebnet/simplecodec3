@@ -1,0 +1,80 @@
+
+(rules PCB simplecodec3
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 642)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+  )
+  (rule
+    (width 203.2)
+    (clear 203.4)
+    (clear 101.6 (type smd_to_turn_gap))
+    (clear 50.8 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 203.2)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "Net-(C1-Pad1)" Earth +3V3 "Net-(C3-Pad2)" "Net-(C3-Pad1)" "Net-(C4-Pad2)" "/DAP4_DIN" "Net-(C7-Pad2)"
+    "Net-(C7-Pad1)" GNDA "Net-(C13-Pad1)" "Net-(C11-Pad2)" "Net-(C17-Pad1)" "Net-(C18-Pad1)" +5V "/I2C_2_SDA"
+    "/I2C_2_SCL" "/AUDIO_MCLK" "Net-(IC2-Pad7)" "Net-(IC2-Pad8)" "Net-(IC2-Pad9)" "Net-(IC2-Pad11)" "Net-(IC3-Pad6)" "Net-(IC3-Pad7)"
+    "Net-(IC3-Pad12)" "Net-(IC3-Pad13)" "Net-(IC3-Pad14)" "Net-(IC3-Pad15)" "/DAP4_SCLK" "/DAP4_FS" "/DAP4_DOUT" "Net-(J2-Pad4)"
+    "Net-(J2-Pad2)" "Net-(C4-Pad1)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 203.2)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

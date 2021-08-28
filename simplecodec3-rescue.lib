@@ -1,0 +1,123 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# ATECC608A-SSHDA-B-SamacSys_Parts
+#
+DEF ATECC608A-SSHDA-B-SamacSys_Parts IC 0 30 Y Y 1 F N
+F0 "IC" 950 300 50 H V L CNN
+F1 "ATECC608A-SSHDA-B-SamacSys_Parts" 950 200 50 H V L CNN
+F2 "SOIC127P600X175-8N" 950 100 50 H I L CNN
+F3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001977A.pdf" 950 0 50 H I L CNN
+F4 "Cryptoathentication ECC608A SOIC" 950 -100 50 H I L CNN "Description"
+F5 "1.75" 950 -200 50 H I L CNN "Height"
+F6 "Microchip" 950 -300 50 H I L CNN "Manufacturer_Name"
+F7 "ATECC608A-SSHDA-B" 950 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "556-ATECC608ASSHDAB" 950 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.com/Search/Refine.aspx?Keyword=556-ATECC608ASSHDAB" 950 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "1654499P" 950 -700 50 H I L CNN "RS Part Number"
+F11 "http://uk.rs-online.com/web/p/products/1654499P" 950 -800 50 H I L CNN "RS Price/Stock"
+DRAW
+P 5 0 1 6 200 100 900 100 900 -400 200 -400 200 100 N
+X NC_1 1 0 0 200 R 50 50 0 0 B
+X NC_2 2 0 -100 200 R 50 50 0 0 B
+X NC_3 3 0 -200 200 R 50 50 0 0 B
+X GND 4 0 -300 200 R 50 50 0 0 B
+X SDA 5 1100 -300 200 L 50 50 0 0 B
+X SCL 6 1100 -200 200 L 50 50 0 0 B
+X NC_4 7 1100 -100 200 L 50 50 0 0 B
+X VCC 8 1100 0 200 L 50 50 0 0 W
+ENDDRAW
+ENDDEF
+#
+# MJ-8435-SamacSys_Parts
+#
+DEF MJ-8435-SamacSys_Parts J 0 30 Y Y 1 F N
+F0 "J" 850 300 50 H V L CNN
+F1 "MJ-8435-SamacSys_Parts" 850 200 50 H V L CNN
+F2 "MJ-8435" 850 100 50 H I L CNN
+F3 "http://akizukidenshi.com/download/ds/marushin/mj8435.pdf" 850 0 50 H I L CNN
+F4 "3.5 earphone jack" 850 -100 50 H I L CNN "Description"
+F5 "Marushin Electric" 850 -300 50 H I L CNN "Manufacturer_Name"
+F6 "MJ-8435" 850 -400 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 800 100 800 -200 200 -200 200 100 N
+X 1 1 0 0 200 R 50 50 0 0 B
+X 2_1 2 1000 0 200 L 50 50 0 0 B
+X 2_2 3 0 -100 200 R 50 50 0 0 B
+X 3 4 1000 -100 200 L 50 50 0 0 B
+ENDDRAW
+ENDDEF
+#
+# PCM1808PWR-SamacSys_Parts
+#
+DEF PCM1808PWR-SamacSys_Parts IC 0 30 Y Y 1 F N
+F0 "IC" 950 300 50 H V L CNN
+F1 "PCM1808PWR-SamacSys_Parts" 950 200 50 H V L CNN
+F2 "PCM1808PWR" 950 100 50 H I L CNN
+F3 "http://www.ti.com/lit/gpn/PCM1808" 950 0 50 H I L CNN
+F4 "99dB SNR Stereo ADC With Single-Ended Inputs" 950 -100 50 H I L CNN "Description"
+F5 "1.2" 950 -200 50 H I L CNN "Height"
+F6 "Texas Instruments" 950 -300 50 H I L CNN "Manufacturer_Name"
+F7 "PCM1808PWR" 950 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "595-PCM1808PWR" 950 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.com/Search/Refine.aspx?Keyword=595-PCM1808PWR" 950 -600 50 H I L CNN "Mouser Price/Stock"
+DRAW
+P 5 0 1 6 200 100 900 100 900 -700 200 -700 200 100 N
+X VREF 1 0 0 200 R 50 50 0 0 B
+X MD0 10 1100 -200 200 L 50 50 0 0 B
+X MD1 11 1100 -300 200 L 50 50 0 0 B
+X FMT 12 1100 -400 200 L 50 50 0 0 B
+X VINL 13 1100 -500 200 L 50 50 0 0 B
+X VINR 14 1100 -600 200 L 50 50 0 0 B
+X AGND 2 0 -100 200 R 50 50 0 0 B
+X VCC 3 0 -200 200 R 50 50 0 0 W
+X VDD 4 0 -300 200 R 50 50 0 0 W
+X DGND 5 0 -400 200 R 50 50 0 0 B
+X SCKI 6 0 -500 200 R 50 50 0 0 B
+X LRCK 7 0 -600 200 R 50 50 0 0 B
+X BCK 8 1100 0 200 L 50 50 0 0 B
+X DOUT 9 1100 -100 200 L 50 50 0 0 B
+ENDDRAW
+ENDDEF
+#
+# PCM5102PW-SamacSys_Parts
+#
+DEF PCM5102PW-SamacSys_Parts IC 0 30 Y Y 1 F N
+F0 "IC" 1050 300 50 H V L CNN
+F1 "PCM5102PW-SamacSys_Parts" 1050 200 50 H V L CNN
+F2 "SOP65P640X120-20N" 1050 100 50 H I L CNN
+F3 "http://www.ti.com/lit/ds/symlink/pcm5102.pdf" 1050 0 50 H I L CNN
+F4 "2VRMS DirectPath, 112/106/100dB Audio Stereo DAC with 32-bit, 384kHz PCM Interface" 1050 -100 50 H I L CNN "Description"
+F5 "1.2" 1050 -200 50 H I L CNN "Height"
+F6 "Texas Instruments" 1050 -300 50 H I L CNN "Manufacturer_Name"
+F7 "PCM5102PW" 1050 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "595-PCM5102PW" 1050 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.com/Search/Refine.aspx?Keyword=595-PCM5102PW" 1050 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "7422930P" 1050 -700 50 H I L CNN "RS Part Number"
+F11 "http://uk.rs-online.com/web/p/products/7422930P" 1050 -800 50 H I L CNN "RS Price/Stock"
+DRAW
+P 5 0 1 6 200 100 1000 100 1000 -1000 200 -1000 200 100 N
+X CPVDD 1 0 0 200 R 50 50 0 0 W
+X DEMP 10 0 -900 200 R 50 50 0 0 B
+X FLT11 11 1200 -900 200 L 50 50 0 0 B
+X SCK12 12 1200 -800 200 L 50 50 0 0 B
+X BCK 13 1200 -700 200 L 50 50 0 0 B
+X DIN 14 1200 -600 200 L 50 50 0 0 B
+X LRCK 15 1200 -500 200 L 50 50 0 0 B
+X FMT 16 1200 -400 200 L 50 50 0 0 B
+X XSMT 17 1200 -300 200 L 50 50 0 0 T
+X LDOO 18 1200 -200 200 L 50 50 0 0 B
+X DGND 19 1200 -100 200 L 50 50 0 0 B
+X CAPP 2 0 -100 200 R 50 50 0 0 B
+X DVDD 20 1200 0 200 L 50 50 0 0 W
+X CPGND 3 0 -200 200 R 50 50 0 0 B
+X CAPM 4 0 -300 200 R 50 50 0 0 B
+X VNEG 5 0 -400 200 R 50 50 0 0 B
+X OUTL 6 0 -500 200 R 50 50 0 0 B
+X OUTR 7 0 -600 200 R 50 50 0 0 B
+X AVDD 8 0 -700 200 R 50 50 0 0 W
+X AGND 9 0 -800 200 R 50 50 0 0 B
+ENDDRAW
+ENDDEF
+#
+#End Library
